@@ -40,6 +40,9 @@ Checkbutton(root, text="DBPM", variable=categories["DBPM"]).grid(row=16, sticky=
 Checkbutton(root, text="BPM", variable=categories["BPM"]).grid(row=17, sticky=W)
 Checkbutton(root, text="VORP", variable=categories["VORP"]).grid(row=18, sticky=W)
 
+
+
+
 Button(root, text="Submit", command=makeMap).grid(row=19, sticky=W)
 
 
