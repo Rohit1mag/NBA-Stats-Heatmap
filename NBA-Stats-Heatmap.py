@@ -2,7 +2,6 @@ from tkinter import *
 import pandas as pd
 import seaborn as sb
 import matplotlib.pyplot as plt
-import sys
 
 def makeMap():
     drops=[]
@@ -15,7 +14,7 @@ def makeMap():
     
 root=Tk()
 
-dataf=pd.read_csv("nba2020Advanced.csv")
+dataf=pd.read_csv("nba2020Advanced.csv")  #replace with current local file
 dataf.drop(columns = ["Rk", "Player", "Pos", "Tm", "Age", "G", "MP", "WS/48", "FTr"], axis = 1, inplace = True) #Dropping
 categories={"PER": IntVar(), "TS%": IntVar(), "3PAr": IntVar(), "ORB%": IntVar(), "DRB%": IntVar(), "TRB%": IntVar(), "AST%": IntVar(), "STL%": IntVar(), "BLK%": IntVar(), "TOV%": IntVar(), "USG%": IntVar(), "OWS": IntVar(), "DWS": IntVar(), "WS": IntVar(), "OBPM": IntVar(), "DBPM": IntVar(), "BPM": IntVar(), "VORP": IntVar()} 
     
